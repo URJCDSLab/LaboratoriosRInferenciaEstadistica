@@ -1,0 +1,52 @@
+\usepackage{booktabs}
+\usepackage[spanish, es-tabla]{babel}
+
+\usepackage{tcolorbox}
+
+\usepackage{tikz}
+\definecolor{ejemplob}{RGB}{238,238,238}
+\definecolor{ejemplof}{RGB}{204,204,204}
+\definecolor{practicab}{RGB}{255,243,205}
+\definecolor{practicaf}{RGB}{255,238,186}
+\definecolor{infob}{RGB}{190, 229, 235}
+\definecolor{infof}{RGB}{209, 236, 241}
+\definecolor{evalb}{RGB}{245, 198, 203}
+\definecolor{evalf}{RGB}{248, 215, 218}
+
+% \usepackage{coloremoji}
+
+\newtcolorbox{rmdpractica}{
+  colback=practicab,
+  colframe=practicaf,
+  coltext=black,
+  boxsep=5pt,
+  left=20pt,
+  right=25pt,
+  arc=4pt,
+  % overlay={\node[inner sep=0pt, xshift=.85cm, anchor=center] 
+  %   at ($ (frame.north west)!.5!(frame.south west) $) {\includegraphics[width=6mm]{img/ejemplo}}; }}
+  overlay={{\includegraphics[width=8mm]{img/practice}}; }}
+  
+\newtcolorbox{rmdinfo}{
+  colback=infob,
+  colframe=infof,
+  coltext=black,
+  boxsep=5pt,
+  left = 20pt,
+  right=25pt,
+  arc=4pt,
+  % overlay={\node[inner sep=0pt, xshift=.85cm, anchor=center] 
+  %   at ($ (frame.north west)!.5!(frame.south west) $) {\includegraphics[width=6mm]{img/ejemplo}}; }}
+  overlay={{\includegraphics[width=8mm]{img/bulb}}; }}
+\newtcolorbox{rmdeval}{
+  colback=evalb,
+  colframe=evalf,
+  coltext=black,
+  boxsep=5pt,
+  left = 20pt,
+  right=25pt,
+  arc=4pt,
+  % overlay={\node[inner sep=0pt, xshift=.85cm, anchor=center] 
+  %   at ($ (frame.north west)!.5!(frame.south west) $) {\includegraphics[width=6mm]{img/ejemplo}}; }}
+  overlay={{\includegraphics[width=8mm]{img/eval}}; }}
+
