@@ -1,7 +1,9 @@
 # Repositorio con los códigos de los laboratorios de la asignatura Inferencia Estadística del Grado en Ciencia e Ingeniería de Datos de la Universidad Rey Juan Carlos
 
-**Autores**: Isaac Martín de Diego, Víctor Aceña y Carmen Lancho  
+**Autores**: Isaac Martín de Diego, Víctor Aceña y Carmen Lancho 
+
 **Curso académico**: 2024/2025 
+
 **Material docente en abierto** de la Universidad Rey Juan Carlos  
 
 Scripts en R de los laboratorios de la asignatura de Inferencia Estadística. Los enunciados y las soluciones (que se generan con los códigos que alberga este repositorio) también se encuentran en abierto y disponibles para consulta.
