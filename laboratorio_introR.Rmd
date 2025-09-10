@@ -877,20 +877,15 @@ que solo querremos hacer una vez. Una vez descargado, impórtalo, comprueba cóm
 :::
 
 ```{r}
-download.file(url = "http://emilio.lcano.com/data/eaci/lab.xlsx",
-              destfile = "lab.xlsx", mode = "wb")
+download.file(url = "https://github.com/URJCDSLab/LaboratoriosRInferenciaEstadistica/tree/main/data/lab.xlsx",
+              destfile = "datos/lab.xlsx", mode = "wb")
 ```
 
 Comprueba que el archivo está en tu directorio de trabajo. Ahora puedes importarlo
 con ayuda del paquete `readxl`:
 
-```{r}
-lab <- readxl::read_excel("lab.xlsx")
-```
-
-
 ```{r, echo=FALSE, eval=FALSE, purl=FALSE}
-lab <- readxl::read_excel("data/lab.xlsx")
+lab <- readxl::read_excel("datos/lab.xlsx")
 ```
 
 La función `read_excel` tiene muchas opciones, y también se puede utilizar el 
@@ -908,8 +903,8 @@ proyecto de RStudio. Una vez descargado, impórtalo, comprueba cómo aparece en 
 
 ```{r}
 download.file(url = "http://emilio.lcano.com/b/adr/p/datos/ejDatos.csv",
-              destfile = "ejDatos.csv")
-merma <- read.csv2("ejDatos.csv")
+              destfile = "datos/ejDatos.csv")
+merma <- read.csv2("datos/ejDatos.csv")
 ```
 
 

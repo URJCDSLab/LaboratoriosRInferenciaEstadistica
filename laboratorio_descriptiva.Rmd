@@ -45,7 +45,7 @@ A continuación, descargaremos y leeremos los datos de nuestro estudio. Primero,
 # 'download.file()' se usa para descargar un archivo desde internet.
 # 'url = "http://emilio.lcano.com/data/eaci/lab.xlsx"' especifica la URL del archivo a descargar.
 # Este es el enlace al archivo Excel que se quiere descargar.
-download.file(url = "http://emilio.lcano.com/data/eaci/lab.xlsx",
+download.file(url = "https://github.com/URJCDSLab/LaboratoriosRInferenciaEstadistica/tree/main/data/lab.xlsx",
               # 'destfile = "lab.xlsx"' define el nombre del archivo en el que se guardará el archivo descargado.
               # En este caso, el archivo se guardará como 'lab.xlsx' en el directorio de trabajo actual.
               destfile = "lab.xlsx", 
