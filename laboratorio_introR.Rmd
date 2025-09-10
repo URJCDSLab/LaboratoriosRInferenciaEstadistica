@@ -902,14 +902,9 @@ proyecto de RStudio. Una vez descargado, impórtalo, comprueba cómo aparece en 
 :::
 
 ```{r}
-download.file(url = "http://emilio.lcano.com/b/adr/p/datos/ejDatos.csv",
+download.file(url = "https://github.com/URJCDSLab/LaboratoriosRInferenciaEstadistica/tree/main/data/ejDatos.csv",
               destfile = "datos/ejDatos.csv")
 merma <- read.csv2("datos/ejDatos.csv")
-```
-
-
-```{r, eval=FALSE, echo=FALSE,purl=FALSE}
-merma <- read.csv2("practicas/ejDatos.csv")
 ```
 
 
