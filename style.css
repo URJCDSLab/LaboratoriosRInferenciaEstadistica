@@ -1,0 +1,30 @@
+.rmdpractica {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  background: 5px center/3em no-repeat;
+  background-color:  #fff3cd;
+  background-image: url("./img/practice.png");
+  border: 2px solid #ffeeba;
+  border-radius: 10px;
+}
+
+.rmdinfo {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  background: 5px center/2em no-repeat;
+  background-color:  #d1ecf1;
+  background-image: url("./img/bulb.png");
+  border: 2px solid #bee5eb;
+  border-radius: 10px;
+}
+
+.rmdeval {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  background: 5px center/2em no-repeat;
+  background-color:  #f8d7da;
+  background-image: url("./img/eval.png");
+  border: 2px solid #f5c6cb;
+  border-radius: 10px;
+}
+
