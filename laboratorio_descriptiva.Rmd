@@ -1,15 +1,15 @@
 ---
-title: 'Laboratorio: Estadística descriptiva'
+title: 'Laboratorio de Estadística Descriptiva'
 author: "Víctor Aceña"
-date: "Inferencia Estadística - Curso 2025/2026"
+date: "Grado en Ciencia e Ingeniería de Datos - Inferencia Estadística - Curso 2025/2026"
 
 output: 
   bookdown::html_document2:
     toc: yes
     toc_float: yes
-  # bookdown::pdf_document2:
-  #   includes:
-  #     in_header: preamble.tex
+  bookdown::pdf_document2:
+    includes:
+      in_header: preamble.tex
 ---
 
 ```{r setup, include=FALSE, purl=FALSE}
@@ -42,20 +42,17 @@ library(corrplot)
 A continuación, descargaremos y leeremos los datos de nuestro estudio. Primero, usamos 'download.file()' para obtener el archivo 'lab.xlsx' desde una URL específica. Luego, con el paquete 'readxl', leemos el archivo Excel y transformamos los datos de fecha al formato adecuado para su análisis en R.
 
 ```{r}
-# 'download.file()' se usa para descargar un archivo desde internet.
-# 'url = "http://emilio.lcano.com/data/eaci/lab.xlsx"' especifica la URL del archivo a descargar.
-# Este es el enlace al archivo Excel que se quiere descargar.
-download.file(url = "https://github.com/URJCDSLab/LaboratoriosRInferenciaEstadistica/tree/main/data/lab.xlsx",
-              # 'destfile = "lab.xlsx"' define el nombre del archivo en el que se guardará el archivo descargado.
-              # En este caso, el archivo se guardará como 'lab.xlsx' en el directorio de trabajo actual.
-              destfile = "lab.xlsx", 
-              # 'mode = "wb"' se usa para especificar el modo de escritura del archivo.
-              # 'wb' significa escribir en modo binario, lo cual es importante para archivos no de texto como Excel.
-              mode = "wb")
+# URL para descargar el archivo directamente
+url_correcta <- "https://raw.githubusercontent.com/URJCDSLab/LaboratoriosRInferenciaEstadistica/main/data/lab.xlsx"
+
+# Descargar el archivo (asegúrate de que la carpeta "datos" exista)
+download.file(url = url_correcta, 
+              destfile = "datos/lab.xlsx", 
+              mode = "wb") # El modo "wb" es importante para archivos binarios como .xlsx
 
 # 'readxl::read_excel("lab.xlsx")' lee el archivo Excel 'lab.xlsx' que acabamos de descargar.
 # 'readxl' es un paquete en R que proporciona funciones para leer archivos Excel.
-lab <- readxl::read_excel("lab.xlsx") |> 
+lab <- readxl::read_excel("datos/lab.xlsx") |> 
   # 'mutate(fecha = as.Date(fecha))' transforma la columna 'fecha' a formato de fecha.
   # 'mutate()' es una función del paquete dplyr que se utiliza para añadir nuevas variables o transformar las existentes.
   # 'as.Date()' convierte los datos a formato de fecha.

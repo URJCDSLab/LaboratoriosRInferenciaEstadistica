@@ -1,15 +1,14 @@
 ---
-title: 'Laboratorio: Introducción a R y Tratamiento de Datos'
+title: 'Laboratorio de Introducción a R y Tratamiento de Datos'
 author: "Víctor Aceña"
-date: "Inferencia Estadística"
+date: "Grado en Ciencia e Ingeniería de Datos - Inferencia Estadística - Curso 2025/2026"
 output: 
-  bookdown::html_document2:
-    css: style.css
-    toc: yes
-    toc_float: yes
   bookdown::pdf_document2:
     includes:
       in_header: preamble.tex
+  bookdown::html_document2:
+    toc: yes
+    toc_float: yes
 ---
 
 ```{r setup, include=FALSE, purl=FALSE}
@@ -877,14 +876,19 @@ que solo querremos hacer una vez. Una vez descargado, impórtalo, comprueba cóm
 :::
 
 ```{r}
-download.file(url = "https://github.com/URJCDSLab/LaboratoriosRInferenciaEstadistica/tree/main/data/lab.xlsx",
-              destfile = "datos/lab.xlsx", mode = "wb")
+# URL para descargar el archivo directamente
+url_correcta <- "https://raw.githubusercontent.com/URJCDSLab/LaboratoriosRInferenciaEstadistica/main/data/lab.xlsx"
+
+# Descargar el archivo (asegúrate de que la carpeta "datos" exista)
+download.file(url = url_correcta, 
+              destfile = "datos/lab.xlsx", 
+              mode = "wb") # El modo "wb" es importante para archivos binarios como .xlsx
 ```
 
 Comprueba que el archivo está en tu directorio de trabajo. Ahora puedes importarlo
 con ayuda del paquete `readxl`:
 
-```{r, echo=FALSE, eval=FALSE, purl=FALSE}
+```{r}
 lab <- readxl::read_excel("datos/lab.xlsx")
 ```
 
@@ -902,7 +906,7 @@ proyecto de RStudio. Una vez descargado, impórtalo, comprueba cómo aparece en 
 :::
 
 ```{r}
-download.file(url = "https://github.com/URJCDSLab/LaboratoriosRInferenciaEstadistica/tree/main/data/ejDatos.csv",
+download.file(url = "https://raw.githubusercontent.com/URJCDSLab/LaboratoriosRInferenciaEstadistica/main/data/ejDatos.csv",
               destfile = "datos/ejDatos.csv")
 merma <- read.csv2("datos/ejDatos.csv")
 ```

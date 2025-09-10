@@ -1,7 +1,7 @@
 ---
 title: 'Laboratorio de Probabilidad y Variables Aleatorias'
 author: "Carmen Lancho - Isaac Martín - Víctor Aceña"
-date: "Grado en Ciencia e Ingeniería de Datos - Inferencia Estadística - Curso 2024/2025"
+date: "Grado en Ciencia e Ingeniería de Datos - Inferencia Estadística - Curso 2025/2026"
 output: 
   bookdown::html_document2:
     toc: yes
